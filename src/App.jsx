@@ -14,6 +14,10 @@ import Misc from './components/pages/Misc'
 import Festivals from './components/pages/Festivals'
 import Calculators from './components/pages/Calculators'
 import Navbar from './Navbar/Navbar'
+import AstrologySoftware from './components/pages/AstrologySoftware'
+
+
+
 
 
 const App = () => {
@@ -24,6 +28,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path ='/horoscope' element={<Horoscope />} />
         <Route path ='/astrology' element={<Astrology />} />
+        <Route path ='/astrologysoftware' element ={<AstrologySoftware/>}/>
         <Route path ='/occult' element={<Occult />} />
         <Route path ='/free-reports' element={<FreeReports />} />
         <Route path ='/healing' element={<Healing />} />
@@ -34,6 +39,7 @@ const App = () => {
         <Route path ='/calculatorS' element={<Calculators />} />
         <Route path ='/festivals' element={<Festivals />} />
         <Route path ='/misc' element={<Misc />} />
+        
       </Routes>
     </div>
   )

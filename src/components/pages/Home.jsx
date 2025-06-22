@@ -5,28 +5,28 @@ import Man from '../../assets/images/aa.png'
 const Home = () => {
   return (
     <>
-    <div className='flex flex-row flex-wrap mt-20 ml-20 mr-20 text-center bg-gray-200 h-64 w-cover'>
+    <div className='flex flex-row flex-wrap mt-5 ml-20 mr-80 text-center bg-orange-100  w-cover'>
     <div className='flex  flex-col text-gray-800'>
       <h1 className='pt-10 text-red-600 font-bold text-4xl '>FIRST CHAT FREE</h1>
       <p className='text-red-600 pl-5 pt-3 font-medium text-xl'>GET FREE CHAT WITH FREE AI ASRTOLOGERS</p >
       <NavLink  to='/'></NavLink>
       <Button  title ='CHAT WITH US'/>
     </div>
-    <div  className='    ml-60 flex w-44 h-54 pt-5 justify-end'  >
+    <div  className='    ml-60 flex w-44 h-54 pt-5  pb-5 justify-end'  >
       <img src={Man} alt="" className="src" />
     </div>
     </div>
 
-    <div className='flex flex-row gap-6  '>
-      <div className='w-44 h-66 bg-gray-200  mt-15' >
-       <h1>Kundali/Birth Chart</h1>
-       <p>Enter Birth Details</p>
+    <div className='flex flex-row gap-6 ml-20 mr-80 '>
+      <div className='w-64 pl-5 pr-5 pt-5 pb-10 h-78 bg-gray-100  mt-15' >
+       <h1 className='text-center font-bold  pb-3 text-xl'>Kundali/Birth Chart</h1>
+       <p className='font-semibold pb-1 '>Enter Birth Details</p>
        <form>
-  <p className='  pb-2 pt-2 mb-3 bg-gray-100 border-2 border-black rounded-lg'>
+  <p className='  pb-2 pt-2 mb-3 bg-gray-100 border-2 pl-2 border-gray-400 rounded-lg'>
     <input type="text" id="name" name="name" placeholder="Name"></input>
   </p>
 
-  <p className='  pb-2 pt-2 mb-3 bg-gray-100 border-2 border-black rounded-lg'>
+  <p className='  pb-2 pt-2 mb-3 bg-gray-100 border-2  pl-2 border-gray-400 rounded-lg'>
     <select id="gender" name="gender">
       <option value="male">Male</option>
       <option value="female">Female</option>
@@ -34,7 +34,7 @@ const Home = () => {
     </select>
   </p>
  <form>
-  <p>
+  <p className='pt-2 pb-2'>
     <select name="day">
       <option value="">Day</option>
       <option value="1">1</option>
@@ -164,14 +164,14 @@ const Home = () => {
 </form>
       </div>
 
-      <div className='w-44 h-66 bg-gray-200  mt-15'>
-        <h1>Kundli Matching</h1>
-        <p>Enter Boy's Details</p>    
-  <p className='  pb-2 pt-2 mb-3 bg-gray-100 border-2 border-black rounded-lg'>
+      <div className='w-64 h-88 bg-gray-200 pl-5 pr-5 mt-15'>
+        <h1 className='pt-3  pb-3 text-xl font-bold  text-center'>Kundli Matching</h1>
+        <p className='font-semibold pb-2'>Enter Boy's Details</p>    
+  <p className='  pb-2 pt-2 mb-3 bg-gray-100  pl-2 border-2 border-gray-400 rounded-lg'>
    <input type="text" id="name" name="name" placeholder="Name"></input>
   </p>
    <form>
-  <p>
+  <p className='gap-4 pb-2'>
     <select name="day">
       <option value="">Day</option>
       <option value="1">1</option>
@@ -292,24 +292,48 @@ const Home = () => {
     </select>
   </p>
 </form>
-  <p className='  pb-2 pt-2 mb-3 bg-gray-100 border-2 border-black rounded-lg'>
+  <p className='  pb-2 pt-2 mb-3 bg-gray-100 border-2  pl-2 border-gray-400 rounded-lg'>
    <input type="text" id="name" name="birth place" placeholder="Birth place"></input>
   </p>  
-  <p>Enter girl's detail on next page</p>
+  <p className='font-bold text-center'>Enter girl's detail on next page</p>
+  <button className='bg-orange-600 text-center pl-2 pr-2 pt-2 pb-2 text-white'
+  >
+    Continue
+  </button>
   
       </div>
 
-      <div  className='w-44 h-66 bg-gray-200  mt-15'>
-        <h1>Panchang</h1>
-        <p className='font-bold'>New Delhi, India (20 June, 2025)</p>
-        <p><span className='font-bold'>Tithi: </span>Krishna Navami upto 09:52:15</p>
-        <p><span className='font-bold'>Month Amanta:</span> Jyeshtha</p>
-        <p><span className='font-bold'>Month Purnimanta:</span> Ashadha</p>
-        <p><span className='font-bold'>Day:</span> Shukravara | <span className='font-bold'>Samvat: </span>2082</p>
-        <p><span className='font-bold'>Nakshatra:</span> Revati upto 21:45:51</p>
-        <p><span className='font-bold'>Karan:</span> Gar upto 09:52:15, Vanij upto <br/> 20:39:44</p>
+      <div  className='w-74 h-78 bg-gray-200  mt-15'>
+        <h1 className='font-bold text-xl text-center pt-3 pb-3'>Panchang</h1>
+        <p className='font-bold text-center pb-2'>New Delhi, India (20 June, 2025)</p>
+        <p><span className='font-bold pl-2 pb-1'>Tithi: </span>Krishna Navami upto 09:52:15</p>
+        <p><span className='font-bold pl-2 pb-1'>Month Amanta:</span> Jyeshtha</p>
+        <p><span className='font-bold pl-2 pb-1'>Month Purnimanta:</span> Ashadha</p>
+        <p><span className='font-bold pl-2 pb-1'>Day:</span> Shukravara | <span className='font-bold'>Samvat: </span>2082</p>
+        <p><span className='font-bold pl-2 pb-1'>Nakshatra:</span> Revati upto 21:45:51</p>
+        <p><span className='font-bold pl-2 pb-1'>Karan:</span> Gar upto 09:52:15, Vanij upto <br/> 20:39:44</p>
       
       </div>
+    </div>    
+
+    <div className='flex flex-col ml-20 mr-80  mt-20 '>
+      <h1 className='font-bold text-2xl pb-5'>
+        Artificial Intelligence (AI)
+      </h1>
+      <p className='font-light text-gray-600'>Are you curious about how Artificial Intelligence can revolutionize your astrological experience? Discover the future of astrology with our <br/>advanced AI astrology services.  <br/> <br/>
+
+At AstroSage, we offer an AI-powered platform that provides personalized AI horoscope readings, AI Kundli generation, and consultations with AI <br/>astrologers. Our cutting-edge AI technology analyzes vast amounts of astrological data to deliver accurate, customized predictions and insights.<br/> Whether you're looking for an AI Kundli that incorporates the latest astrological algorithms or an AI astrologer who can provide instant, precise <br/>answers to your questions, AstroSage is your go-to destination.  <br/> <br/>
+
+Our AI astrology services combine the wisdom of traditional astrology with the power of Artificial Intelligence, ensuring that you receive the most<br/> accurate and insightful readings available. Embrace the future with our AI-enabled astrology, where technology meets tradition, to guide you <br/>through life's uncertainties.</p>
+    </div>
+
+    <div className='flex flex-col ml-20 mr-80  mt-20 '>
+      <h1 className='font-bold text-2xl pb-5'>Astrology</h1>
+      <p className='font-light text-gray-600'>Astrology is the mathematics of your life, derived from the calculations of your planetary positions to predict what the future holds for you. <br/> <br/>
+
+Welcome to AstroSage! Your abode to every form of online astrology consultation. From Vedic astrology to KP system, and everything in <br/>between, including Birth chart, Numerology, Palmistry, Tarot Reading, Aura Reading, Vastu, Spiritual Healing, Online Horoscopes, Chinese <br/>Astrology, Western Astrology, Vedic Astrology, Zodiac readings (both Sun and Moon signs) and more. Consult the best astrologers of India for <br/>instant free astrology online consultation and seek solutions to your problems. <br/> <br/>
+
+We understand the sanctity of this 5000 year age-old knowledge that was brought to us by our sages and gurus for world welfare. We are your<br/> one stop solution to free Online Horoscope and free astrology consultation. Just as we need doctors for our problems, we sure do need an expert <br/>astrological doctor for our astrology related problems too. We are your online astrology doctors. At any point of life where you <br/>may feel that you are at a low point, without much hesitation come to us. Our services range from free online horoscope to astrology online consultation in various<br/> branches with eminent experts. AstroSage, in its broadest sense, is here to help you with any astrology query and guide you via online medium</p>
     </div>
 
     
