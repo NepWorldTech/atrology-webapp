@@ -1,10 +1,15 @@
 import React from 'react'
+import Compatibility from './Compatibility'
+
 
 const Misc = () => {
   return (
+    <>
+   
     <div>
-      misc
+     <Compatibility/>
     </div>
+    </>
   )
 }
 

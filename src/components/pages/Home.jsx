@@ -1,320 +1,119 @@
 import React from 'react'
 import Button from '../Button/Button'
 import { NavLink } from 'react-router-dom'
-import Man from '../../assets/images/aa.png'
+import Slider from '../Slider/Slider'
+
 const Home = () => {
   return (
     <>
-    <div className='flex flex-row flex-wrap mt-5 ml-20 mr-80 text-center bg-orange-100  w-cover'>
-    <div className='flex  flex-col text-gray-800'>
-      <h1 className='pt-10 text-red-600 font-bold text-4xl '>FIRST CHAT FREE</h1>
-      <p className='text-red-600 pl-5 pt-3 font-medium text-xl'>GET FREE CHAT WITH FREE AI ASRTOLOGERS</p >
-      <NavLink  to='/'></NavLink>
-      <Button  title ='CHAT WITH US'/>
+    <div>
+      <Slider/>
     </div>
-    <div  className='    ml-60 flex w-44 h-54 pt-5  pb-5 justify-end'  >
-      <img src={Man} alt="" className="src" />
-    </div>
-    </div>
-
-    <div className='flex flex-row gap-6 ml-20 mr-80 '>
-      <div className='w-64 pl-5 pr-5 pt-5 pb-10 h-78 bg-gray-100  mt-15' >
-       <h1 className='text-center font-bold  pb-3 text-xl'>Kundali/Birth Chart</h1>
-       <p className='font-semibold pb-1 '>Enter Birth Details</p>
-       <form>
-  <p className='  pb-2 pt-2 mb-3 bg-gray-100 border-2 pl-2 border-gray-400 rounded-lg'>
-    <input type="text" id="name" name="name" placeholder="Name"></input>
-  </p>
-
-  <p className='  pb-2 pt-2 mb-3 bg-gray-100 border-2  pl-2 border-gray-400 rounded-lg'>
-    <select id="gender" name="gender">
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-      <option value="others">Others</option>
-    </select>
-  </p>
- <form>
-  <p className='pt-2 pb-2'>
-    <select name="day">
-      <option value="">Day</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-      <option value="14">14</option>
-      <option value="15">15</option>
-      <option value="16">16</option>
-      <option value="17">17</option>
-      <option value="18">18</option>
-      <option value="19">19</option>
-      <option value="20">20</option>
-      <option value="21">21</option>
-      <option value="22">22</option>
-      <option value="23">23</option>
-      <option value="24">24</option>
-      <option value="25">25</option>
-      <option value="26">26</option>
-      <option value="27">27</option>
-      <option value="28">28</option>
-      <option value="29">29</option>
-      <option value="30">30</option>
-      <option value="31">31</option>
-    </select>
-
-    <select name="month">
-      <option value="">Month</option>
-     
-      <option value="1">January</option>
-      <option value="2">February</option>
-      <option value="3">March</option>
-      <option value="4">April</option>
-      <option value="5">May</option>
-      <option value="6">June</option>
-      <option value="7">July</option>
-      <option value="8">August</option>
-      <option value="9">September</option>
-      <option value="10">October</option>
-      <option value="11">November</option>
-      <option value="12">December</option>
-    </select>
-
-    <select name="year">
-      <option value="">Year</option>
-      
-      <option value="2023">2023</option>
-      <option value="2024">2024</option>
-      <option value="2025">2025</option>
-      <option value="2026">2026</option>
-      <option value="2027">2027</option>
-    </select>
-
-    <select name="hours">
-      <option value="">Hour</option>
-    
-      <option value="0">00</option>
-      <option value="1">01</option>
-      <option value="2">02</option>
-      <option value="3">03</option>
-      <option value="4">04</option>
-      <option value="5">05</option>
-      <option value="6">06</option>
-      <option value="7">07</option>
-      <option value="8">08</option>
-      <option value="9">09</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-      <option value="14">14</option>
-      <option value="15">15</option>
-      <option value="16">16</option>
-      <option value="17">17</option>
-      <option value="18">18</option>
-      <option value="19">19</option>
-      <option value="20">20</option>
-      <option value="21">21</option>
-      <option value="22">22</option>
-      <option value="23">23</option>
-    </select>
-
-    <select name="minutes">
-      <option value="">Minutes</option>
-     
-      <option value="0">00</option>
-      <option value="1">01</option>
-      <option value="2">02</option>
-      <option value="3">03</option>
-      <option value="4">04</option>
-      <option value="5">05</option>
-      <option value="6">06</option>
-      <option value="7">07</option>
-      <option value="8">08</option>
-      <option value="9">09</option>
-      <option value="10">10</option>
-      
-      <option value="59">59</option>
-    </select>
-
-    <select name="seconds">
-      <option value="">Seconds</option>
-      
-      <option value="0">00</option>
-      <option value="1">01</option>
-      <option value="2">02</option>
-     
-      <option value="59">59</option>
-    </select>
-  </p>
-</form>
-
-     
-
-  <p className='  pb-2 pt-2 mb-3 bg-gray-100 border-2 border-black rounded-lg'>
-   <input type="text" id="name" name="birth place" placeholder="Birth place"></input>
-  </p>
-</form>
-      </div>
-
-      <div className='w-64 h-88 bg-gray-200 pl-5 pr-5 mt-15'>
-        <h1 className='pt-3  pb-3 text-xl font-bold  text-center'>Kundli Matching</h1>
-        <p className='font-semibold pb-2'>Enter Boy's Details</p>    
-  <p className='  pb-2 pt-2 mb-3 bg-gray-100  pl-2 border-2 border-gray-400 rounded-lg'>
-   <input type="text" id="name" name="name" placeholder="Name"></input>
-  </p>
-   <form>
-  <p className='gap-4 pb-2'>
-    <select name="day">
-      <option value="">Day</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-      <option value="14">14</option>
-      <option value="15">15</option>
-      <option value="16">16</option>
-      <option value="17">17</option>
-      <option value="18">18</option>
-      <option value="19">19</option>
-      <option value="20">20</option>
-      <option value="21">21</option>
-      <option value="22">22</option>
-      <option value="23">23</option>
-      <option value="24">24</option>
-      <option value="25">25</option>
-      <option value="26">26</option>
-      <option value="27">27</option>
-      <option value="28">28</option>
-      <option value="29">29</option>
-      <option value="30">30</option>
-      <option value="31">31</option>
-    </select>
-
-    <select name="month">
-      <option value="">Month</option>
-     
-      <option value="1">January</option>
-      <option value="2">February</option>
-      <option value="3">March</option>
-      <option value="4">April</option>
-      <option value="5">May</option>
-      <option value="6">June</option>
-      <option value="7">July</option>
-      <option value="8">August</option>
-      <option value="9">September</option>
-      <option value="10">October</option>
-      <option value="11">November</option>
-      <option value="12">December</option>
-    </select>
-
-    <select name="year">
-      <option value="">Year</option>
-      
-      <option value="2023">2023</option>
-      <option value="2024">2024</option>
-      <option value="2025">2025</option>
-      <option value="2026">2026</option>
-      <option value="2027">2027</option>
-    </select>
-
-    <select name="hours">
-      <option value="">Hour</option>
-    
-      <option value="0">00</option>
-      <option value="1">01</option>
-      <option value="2">02</option>
-      <option value="3">03</option>
-      <option value="4">04</option>
-      <option value="5">05</option>
-      <option value="6">06</option>
-      <option value="7">07</option>
-      <option value="8">08</option>
-      <option value="9">09</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-      <option value="14">14</option>
-      <option value="15">15</option>
-      <option value="16">16</option>
-      <option value="17">17</option>
-      <option value="18">18</option>
-      <option value="19">19</option>
-      <option value="20">20</option>
-      <option value="21">21</option>
-      <option value="22">22</option>
-      <option value="23">23</option>
-    </select>
-
-    <select name="minutes">
-      <option value="">Minutes</option>
-     
-      <option value="0">00</option>
-      <option value="1">01</option>
-      <option value="2">02</option>
-      <option value="3">03</option>
-      <option value="4">04</option>
-      <option value="5">05</option>
-      <option value="6">06</option>
-      <option value="7">07</option>
-      <option value="8">08</option>
-      <option value="9">09</option>
-      <option value="10">10</option>
-      
-      <option value="59">59</option>
-    </select>
-
-    <select name="seconds">
-      <option value="">Seconds</option>
-      
-      <option value="0">00</option>
-      <option value="1">01</option>
-      <option value="2">02</option>
-     
-      <option value="59">59</option>
-    </select>
-  </p>
-</form>
-  <p className='  pb-2 pt-2 mb-3 bg-gray-100 border-2  pl-2 border-gray-400 rounded-lg'>
-   <input type="text" id="name" name="birth place" placeholder="Birth place"></input>
-  </p>  
-  <p className='font-bold text-center'>Enter girl's detail on next page</p>
-  <button className='bg-orange-600 text-center pl-2 pr-2 pt-2 pb-2 text-white'
-  >
-    Continue
-  </button>
   
+    <div className="flex flex-col md:flex-row gap-6 px-10 py-10">
+      {/* Kundali Form */}
+      <div className="w-full md:w-1/3 bg-gray-100 p-5 rounded-xl shadow">
+        <h1 className="text-center font-bold text-xl pb-3">Kundali / Birth Chart</h1>
+        <p className="font-semibold pb-1">Enter Birth Details</p>
+
+        <form className="space-y-4">
+          <input
+            type="text"
+            placeholder="Name"
+            className="w-full border-2 border-gray-400 rounded-lg p-2 bg-gray-100"
+          />
+
+          <select className="w-full border-2 border-gray-400 rounded-lg p-2 bg-gray-100">
+            <option value="">Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>
+          </select>
+
+          <div className="flex flex-wrap gap-2">
+            <select className="flex-1 p-2 border rounded"> <option>Day</option>{Array.from({length: 31}, (_, i) => <option key={i}>{i+1}</option>)} </select>
+            <select className="flex-1 p-2 border rounded">
+              <option>Month</option>
+              {["January","February","March","April","May","June","July","August","September","October","November","December"].map((month, i) => (
+                <option key={i} value={i+1}>{month}</option>
+              ))}
+            </select>
+            <select className="flex-1 p-2 border rounded"> <option>Year</option> {[2023, 2024, 2025, 2026, 2027].map((year) => <option key={year}>{year}</option>)} </select>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            <select className="flex-1 p-2 border rounded"><option>Hour</option>{Array.from({length: 24}, (_, i) => <option key={i}>{i.toString().padStart(2, '0')}</option>)}</select>
+            <select className="flex-1 p-2 border rounded"><option>Minute</option>{Array.from({length: 60}, (_, i) => <option key={i}>{i.toString().padStart(2, '0')}</option>)}</select>
+            <select className="flex-1 p-2 border rounded"><option>Second</option>{Array.from({length: 60}, (_, i) => <option key={i}>{i.toString().padStart(2, '0')}</option>)}</select>
+          </div>
+
+          <input
+            type="text"
+            placeholder="Birth place"
+            className="w-full border-2 border-gray-400 rounded-lg p-2 bg-gray-100"
+          />
+        </form>
       </div>
 
-      <div  className='w-74 h-78 bg-gray-200  mt-15'>
-        <h1 className='font-bold text-xl text-center pt-3 pb-3'>Panchang</h1>
-        <p className='font-bold text-center pb-2'>New Delhi, India (20 June, 2025)</p>
-        <p><span className='font-bold pl-2 pb-1'>Tithi: </span>Krishna Navami upto 09:52:15</p>
-        <p><span className='font-bold pl-2 pb-1'>Month Amanta:</span> Jyeshtha</p>
-        <p><span className='font-bold pl-2 pb-1'>Month Purnimanta:</span> Ashadha</p>
-        <p><span className='font-bold pl-2 pb-1'>Day:</span> Shukravara | <span className='font-bold'>Samvat: </span>2082</p>
-        <p><span className='font-bold pl-2 pb-1'>Nakshatra:</span> Revati upto 21:45:51</p>
-        <p><span className='font-bold pl-2 pb-1'>Karan:</span> Gar upto 09:52:15, Vanij upto <br/> 20:39:44</p>
-      
+      {/* Kundli Matching */}
+      <div className="w-full md:w-1/3 bg-gray-200 p-5 rounded-xl shadow">
+        <h1 className="text-center font-bold text-xl pb-3">Kundli Matching</h1>
+        <p className="font-semibold pb-2">Enter Boy's Details</p>
+
+        <form className="space-y-4">
+          <input
+            type="text"
+            placeholder="Name"
+            className="w-full border-2 border-gray-400 rounded-lg p-2 bg-gray-100"
+          />
+
+          <div className="flex flex-wrap gap-2">
+            <select className="flex-1 p-2 border rounded"> <option>Day</option>{Array.from({length: 31}, (_, i) => <option key={i}>{i+1}</option>)} </select>
+            <select className="flex-1 p-2 border rounded">
+              <option>Month</option>
+              {["January","February","March","April","May","June","July","August","September","October","November","December"].map((month, i) => (
+                <option key={i} value={i+1}>{month}</option>
+              ))}
+            </select>
+            <select className="flex-1 p-2 border rounded"> <option>Year</option> {[2023, 2024, 2025, 2026, 2027].map((year) => <option key={year}>{year}</option>)} </select>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            <select className="flex-1 p-2 border rounded"><option>Hour</option>{Array.from({length: 24}, (_, i) => <option key={i}>{i.toString().padStart(2, '0')}</option>)}</select>
+            <select className="flex-1 p-2 border rounded"><option>Minute</option>{Array.from({length: 60}, (_, i) => <option key={i}>{i.toString().padStart(2, '0')}</option>)}</select>
+            <select className="flex-1 p-2 border rounded"><option>Second</option>{Array.from({length: 60}, (_, i) => <option key={i}>{i.toString().padStart(2, '0')}</option>)}</select>
+          </div>
+
+          <input
+            type="text"
+            placeholder="Birth place"
+            className="w-full border-2 border-gray-400 rounded-lg p-2 bg-gray-100"
+          />
+
+          <p className="text-center font-bold">Enter girl's detail on next page</p>
+
+          <button className="w-full bg-orange-600 text-white py-2 rounded-md hover:bg-orange-700 transition">
+            Continue
+          </button>
+        </form>
       </div>
-    </div>    
+
+      {/* Panchang */}
+      <div className="w-full md:w-1/3 bg-gray-200 p-5  text-2xl rounded-xl shadow">
+        <h1 className="text-center font-bold text-xl pb-3">Panchang</h1>
+        <p className="text-center font-semibold pb-2">New Delhi, India (20 June, 2025)</p>
+        <div className="space-y-1  p-4 text-xl">
+          <p><strong>Tithi:</strong> Krishna Navami upto 09:52:15</p>
+          <p><strong>Month Amanta:</strong> Jyeshtha</p>
+          <p><strong>Month Purnimanta:</strong> Ashadha</p>
+          <p><strong>Day:</strong> Shukravara | <strong>Samvat:</strong> 2082</p>
+          <p><strong>Nakshatra:</strong> Revati upto 21:45:51</p>
+          <p><strong>Karan:</strong> Gar upto 09:52:15, Vanij upto 20:39:44</p>
+        </div>
+      </div>
+    </div>
+
+
 
     <div className='flex flex-col ml-20 mr-80  mt-20 '>
       <h1 className='font-bold text-2xl pb-5'>
@@ -342,3 +141,4 @@ We understand the sanctity of this 5000 year age-old knowledge that was brought 
 }
 
 export default Home
+   

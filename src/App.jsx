@@ -15,6 +15,10 @@ import Festivals from './components/pages/Festivals'
 import Calculators from './components/pages/Calculators'
 import Navbar from './Navbar/Navbar'
 import AstrologySoftware from './components/pages/AstrologySoftware'
+import Slider from './components/Slider/Slider'
+import Footer from './components/Footer/Footer'
+import Login from './components/authenication/Login'
+import Signup from './components/authenication/Signup'
 
 
 
@@ -39,8 +43,12 @@ const App = () => {
         <Route path ='/calculatorS' element={<Calculators />} />
         <Route path ='/festivals' element={<Festivals />} />
         <Route path ='/misc' element={<Misc />} />
-        
+        <Route path = '/slider' element = {<Slider/>}/>
+        <Route path = '/login' element = {<Login/>}/>
+        <Route path = '/signup' element = {<Signup/>}/>
       </Routes>
+      <Footer/>
+    
     </div>
   )
 }

@@ -1,9 +1,10 @@
 import React from 'react'
+import Slider from '../Slider/Slider'
 
 const KP = () => {
   return (
     <div>
-     kp 
+    <Slider/> 
     </div>
   )
 }

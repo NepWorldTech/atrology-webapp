@@ -1,8 +1,10 @@
 import React from 'react'
+import Slider from '../Slider/Slider'
 
 const Compatibility = () => {
   return (
    <>
+   <Slider/>
     <div className='flex bg-yellow-100 text-black font-medium text-xl ml-20 pl-2 pt-2 pb-2 mr-20'>
         <h1>Home / Astrologicals Compatibality Tools</h1>
       </div>
